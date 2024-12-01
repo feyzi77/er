@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMSTR Mining Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(145deg, #1d2671, #c33764);
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #f1f1f1;
+        }
+
+        .ad-banner {
+            background-color: #ff512f;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            border-radius: 8px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 1em;
+        }
+
+        .reward-system {
+            margin-bottom: 20px;
+        }
+
+        .reward-system h3 {
+            color: #ffcc00;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .reward-system ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.1em;
+        }
+
+        .reward-system li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .reward-system li i {
+            color: #ffcc00;
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(145deg, #ff512f, #dd2476);
+            color: #fff;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(255, 82, 82, 0.5);
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #f1f1f1;
+            font-size: 1em;
+        }
+
+        .footer span {
+            color: #ffcc00;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .icon {
+            font-size: 2em;
+            cursor: pointer;
+            color: #ffcc00;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-box {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .profile-box i {
+            color: #ffcc00;
+            margin-right: 10px;
+        }
+
+        .profile-info {
+            text-align: left;
+            flex: 1;
+        }
+
+        .profile-info h3 {
+            font-size: 1.2em;
+        }
+
+        .profile-info p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>
+        <img src="https://s8.uupload.ir/files/d67519ef88e1068ac74cdf56af1c78c9_0fqq.jpg" alt="HMSTR Icon" width="50" height="50">
+        HMSTR Mining Project
+    </h1>
+    <p>Your gateway to mining rewards!</p>
+</header>
+
+<div class="ad-banner">
+    <strong>Welcome to the only HMSTR token mining project!</strong> Start your mining journey now and earn amazing rewards.
+</div>
+
+<div class="container">
+    <h2 class="section-title">Get Started</h2>
+
+    <!-- «ÿ·«⁄«  ŒÊ‘«„œêÊÌÌ -->
+    <div class="info-box">
+        <h3>Hello, <span id="telegram-username"></span>!</h3>
+        <p>By purchasing a mining spot with 400 HMSTR tokens, you'll get a unique referral link. Share this link and invite 3 people to get 1000 HMSTR tokens as a reward!</p>
+    </div>
+
+    <!-- Å—Ê›«Ì· ò«—»— -->
+    <div class="profile-box">
+        <div class="profile-info">
+            <h3>Profile</h3>
+            <p>Username: <span id="username">Guest</span></p>
+            <p>Wallet: <span id="wallet-address">Not connected</span></p>
+            <p>Invites: <span id="invites-count">0</span> people</p>
+        </div>
+        <i class="fas fa-user-circle"></i>
+    </div>
+
+    <!-- ”Ì” „ Å«œ«‘ -->
+    <div class="reward-system">
+        <h3>How It Works:</h3>
+        <ul>
+            <li><i class="fas fa-coins"></i> Pay 400 HMSTR to join and get a unique invite link.</li>
+            <li><i class="fas fa-share-alt"></i> Invite 3 people using your link to earn 1000 HMSTR tokens!</li>
+            <li><i class="fas fa-clock"></i> Once you've invited 3 people, you will receive your reward immediately! It doesn't take long.</li>
+            <li><i class="fas fa-user-plus"></i> Invite more for unlimited rewards.</li>
+            <li><i class="fas fa-redo"></i> Keep growing your network to earn more!</li>
+        </ul>
+    </div>
+
+    <!-- œò„Â « ’«· »Â Ê·  -->
+    <button onclick="connectWallet()">Connect to Wallet</button>
+
+    <!-- œò„Â Å—œ«Œ  -->
+    <button onclick="makePayment()">Pay 400 HMSTR Now</button>
+
+    <!-- ¬ÌòÊ‰ùÂ«Ì Å—Ê›«Ì· »œÊ‰ „ ‰ -->
+    <div class="icons-container">
+        <i class="fas fa-wallet icon" onclick="openWalletPage()"></i>
+        <i class="fas fa-users icon" onclick="viewInvites()"></i>
+        <i class="fas fa-cash-register icon" onclick="withdrawRewards()"></i> <!-- ê“Ì‰Â »—œ«‘  Å«œ«‘ «÷«›Â ‘œ -->
+    </div>
+</div>
+
+<footer>
+    <p>Powered by <span>HMSTR Mining Project</span></p>
+</footer>
+
+<script>
+    // œ—Ì«›  ‰«„ ò«—»—Ì  ·ê—«„ «“ URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+    const telegramId = urlParams.get('telegram_id');
+    document.getElementById('telegram-username').innerText = username || "Guest";
+    document.getElementById('username').innerText = username || "Guest";
+
+    // « ’«· »Â Ê·  (TonKeeper)
+    function connectWallet() {
+        tonkeeper.request({
+            method: 'ton_connect'
+        }).then((wallet) => {
+            fetch('/buy_position', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    wallet_address: wallet.address,
+                    telegram_id: telegramId,
+                    username: username
+                })
+            }).then(response => response.json())
+              .then(data => alert(data.message));
+        }).catch(error => alert('Error connecting wallet'));
+    }
+
+    // Å—œ«Œ  400  Êò‰ HMSTR
+    function makePayment() {
+        alert("Initiating payment of 400 HMSTR to the wallet.");
+    }
+
+    // »«“ ò—œ‰ ’›ÕÂ Ê· 
+    function openWalletPage() {
+        window.open('https://tonkeeper.com', '_blank');
+    }
+
+    // „‘«ÂœÂ œ⁄Ê ùÂ«
+    function viewInvites() {
+        window.location.href = `/invite/${telegramId}`;
+    }
+
+    // »—œ«‘  Å«œ«‘
+    function withdrawRewards() {
+        alert("Requesting 1000 HMSTR tokens reward.");
+    }
+</script>
+
+</body>
+</html>
